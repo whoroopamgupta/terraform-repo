@@ -1,0 +1,22 @@
+# Ignore Terraform state files
+terraform.tfstate
+terraform.tfstate.backup
+
+# Ignore crash logs and CLI configuration files
+crash.log
+*.tfvars
+*.tfvars.json
+.terraform.tfstate.lock.info
+
+# Ignore .terraform directory (downloaded providers/modules)
+.terraform/
+
+# Ignore Terraform lock file (optional, but usually okay to commit)
+# .terraform.lock.hcl
+
+# Ignore any sensitive key files
+terra-key
+terra-key.pem
+*.pem
+*.key
+*.pub
