@@ -35,7 +35,7 @@ resource "aws_security_group" "tws_security_group" {
 
 
 resource "aws_instance" "name" {
-  ami             = "ami-08a6efd148b1f7504"
+  ami             = var.ami_id
   instance_type   = "t2.micro"
   key_name        = aws_key_pair.deployer.key_name
   security_groups = [aws_security_group.tws_security_group.name]
